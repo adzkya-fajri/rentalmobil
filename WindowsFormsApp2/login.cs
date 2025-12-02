@@ -108,12 +108,41 @@ namespace RentalMobil
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Username dan Password harus diisi!", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validasi login sederhana (ganti dengan database di aplikasi real)
+            if (username == "admin" && password == "admin")
+            {
+                MessageBox.Show("Login berhasil!\nSelamat datang, " + username, "Sukses",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Buka form utama
+                this.Hide();
+                // FormMain formMain = new FormMain();
+                // formMain.ShowDialog();
+                // this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Username atau Password salah!", "Login Gagal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Clear();
+                txtUsername.Focus();
+            }
         }
+        
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void panelLeft_Paint(object sender, PaintEventArgs e)

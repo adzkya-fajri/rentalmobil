@@ -63,17 +63,19 @@ namespace RentalMobil
             this.panelLeft.Controls.Add(this.lblSubtitle);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(350, 450);
+            this.panelLeft.Size = new System.Drawing.Size(467, 554);
             this.panelLeft.TabIndex = 0;
             this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
             // picLogo
             // 
             this.picLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.picLogo.Location = new System.Drawing.Point(125, 80);
+            this.picLogo.Location = new System.Drawing.Point(167, 98);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(100, 100);
+            this.picLogo.Size = new System.Drawing.Size(133, 123);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
@@ -82,9 +84,10 @@ namespace RentalMobil
             // 
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(50, 200);
+            this.lblTitle.Location = new System.Drawing.Point(67, 246);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(250, 40);
+            this.lblTitle.Size = new System.Drawing.Size(333, 49);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "RENTAL MOBIL";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,9 +96,10 @@ namespace RentalMobil
             // 
             this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.lblSubtitle.Location = new System.Drawing.Point(50, 245);
+            this.lblSubtitle.Location = new System.Drawing.Point(67, 302);
+            this.lblSubtitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(250, 40);
+            this.lblSubtitle.Size = new System.Drawing.Size(333, 49);
             this.lblSubtitle.TabIndex = 2;
             this.lblSubtitle.Text = "Sistem Manajemen Rental Kendaraan";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -115,18 +119,20 @@ namespace RentalMobil
             this.panelRight.Controls.Add(this.lblOrRegister);
             this.panelRight.Controls.Add(this.lblRegister);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(350, 0);
+            this.panelRight.Location = new System.Drawing.Point(467, 0);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(350, 450);
+            this.panelRight.Size = new System.Drawing.Size(466, 554);
             this.panelRight.TabIndex = 1;
             // 
             // lblWelcome
             // 
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(40, 60);
+            this.lblWelcome.Location = new System.Drawing.Point(53, 74);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(270, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(360, 49);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Selamat Datang!";
             // 
@@ -134,9 +140,10 @@ namespace RentalMobil
             // 
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(40, 130);
+            this.lblUsername.Location = new System.Drawing.Point(53, 160);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(270, 20);
+            this.lblUsername.Size = new System.Drawing.Size(360, 25);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
@@ -146,18 +153,20 @@ namespace RentalMobil
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.Location = new System.Drawing.Point(40, 153);
+            this.txtUsername.Location = new System.Drawing.Point(53, 188);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(270, 25);
+            this.txtUsername.Size = new System.Drawing.Size(359, 30);
             this.txtUsername.TabIndex = 2;
             // 
             // lblPassword
             // 
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(40, 195);
+            this.lblPassword.Location = new System.Drawing.Point(53, 240);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(270, 20);
+            this.lblPassword.Size = new System.Drawing.Size(360, 25);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password";
             // 
@@ -167,19 +176,21 @@ namespace RentalMobil
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.Location = new System.Drawing.Point(40, 218);
+            this.txtPassword.Location = new System.Drawing.Point(53, 268);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(270, 25);
+            this.txtPassword.Size = new System.Drawing.Size(359, 30);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // chkShowPassword
             // 
             this.chkShowPassword.ForeColor = System.Drawing.Color.White;
-            this.chkShowPassword.Location = new System.Drawing.Point(40, 255);
+            this.chkShowPassword.Location = new System.Drawing.Point(53, 314);
+            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(150, 20);
+            this.chkShowPassword.Size = new System.Drawing.Size(200, 25);
             this.chkShowPassword.TabIndex = 5;
             this.chkShowPassword.Text = "Tampilkan Password";
             // 
@@ -188,9 +199,10 @@ namespace RentalMobil
             this.lblForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblForgotPassword.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.lblForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.lblForgotPassword.Location = new System.Drawing.Point(200, 255);
+            this.lblForgotPassword.Location = new System.Drawing.Point(267, 314);
+            this.lblForgotPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblForgotPassword.Name = "lblForgotPassword";
-            this.lblForgotPassword.Size = new System.Drawing.Size(110, 20);
+            this.lblForgotPassword.Size = new System.Drawing.Size(147, 25);
             this.lblForgotPassword.TabIndex = 6;
             this.lblForgotPassword.Text = "Lupa Password?";
             this.lblForgotPassword.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -203,9 +215,10 @@ namespace RentalMobil
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(40, 295);
+            this.btnLogin.Location = new System.Drawing.Point(53, 363);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(270, 40);
+            this.btnLogin.Size = new System.Drawing.Size(360, 49);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -219,9 +232,10 @@ namespace RentalMobil
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(40, 345);
+            this.btnCancel.Location = new System.Drawing.Point(53, 425);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(270, 40);
+            this.btnCancel.Size = new System.Drawing.Size(360, 49);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -231,9 +245,10 @@ namespace RentalMobil
             // 
             this.lblOrRegister.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.lblOrRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.lblOrRegister.Location = new System.Drawing.Point(100, 400);
+            this.lblOrRegister.Location = new System.Drawing.Point(133, 492);
+            this.lblOrRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrRegister.Name = "lblOrRegister";
-            this.lblOrRegister.Size = new System.Drawing.Size(110, 20);
+            this.lblOrRegister.Size = new System.Drawing.Size(147, 25);
             this.lblOrRegister.TabIndex = 9;
             this.lblOrRegister.Text = "Belum punya akun?";
             this.lblOrRegister.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -243,22 +258,24 @@ namespace RentalMobil
             this.lblRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold);
             this.lblRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.lblRegister.Location = new System.Drawing.Point(210, 400);
+            this.lblRegister.Location = new System.Drawing.Point(280, 492);
+            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(100, 20);
+            this.lblRegister.Size = new System.Drawing.Size(133, 25);
             this.lblRegister.TabIndex = 10;
             this.lblRegister.Text = "Daftar Sekarang";
             this.lblRegister.Click += new System.EventHandler(this.lblRegister_Click_1);
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(700, 450);
+            this.ClientSize = new System.Drawing.Size(933, 554);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

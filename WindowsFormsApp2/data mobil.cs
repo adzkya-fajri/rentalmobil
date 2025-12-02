@@ -32,6 +32,8 @@ namespace RentalMobil
             }
         }
 
+
+
         private void BtnSave_Click(object sender, EventArgs e)
         {
             if (ValidateInput())
@@ -170,12 +172,7 @@ namespace RentalMobil
         }
 
         [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDataMobil());
-        }
+        
 
         private void FormDataMobil_Load(object sender, EventArgs e)
         {
@@ -183,6 +180,31 @@ namespace RentalMobil
         }
 
         private void panelTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
 
         }
