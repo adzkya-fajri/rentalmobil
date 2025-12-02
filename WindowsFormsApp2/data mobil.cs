@@ -170,13 +170,14 @@ namespace RentalMobil
             dgvData.ClearSelection();
             txtNoMobil.Focus();
         }
-
-        [STAThread]
         
 
         private void FormDataMobil_Load(object sender, EventArgs e)
         {
-
+            dgvData.Columns.Add("NoMobil", "No Mobil");
+            dgvData.Columns.Add("JenisMobil", "Jenis Mobil");
+            dgvData.Columns.Add("MerkMobil", "Merk Mobil");
+            dgvData.Columns.Add("HargaSewa", "Harga Sewa");
         }
 
         private void panelTop_Paint(object sender, PaintEventArgs e)
@@ -191,22 +192,77 @@ namespace RentalMobil
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
+            // Validasi wajib diisi
+            if (string.IsNullOrWhiteSpace(txtNoMobil.Text) ||
+                string.IsNullOrWhiteSpace(txtJenisMobil.Text) ||
+                string.IsNullOrWhiteSpace(txtMerkMobil.Text) ||
+                string.IsNullOrWhiteSpace(txtHargaSewa.Text))
+            {
+                MessageBox.Show("Semua data harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Tambahkan baris ke DataGridView
+            dgvData.Rows.Add(
+                txtNoMobil.Text,
+                txtJenisMobil.Text,
+                txtMerkMobil.Text,
+                txtHargaSewa.Text
+            );
+
+            MessageBox.Show("Data berhasil disimpan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Kosongkan input
+            ClearForm();
         }
 
         private void btnUpdate_Click_1(object sender, EventArgs e)
         {
+            if (dgvData.CurrentRow == null)
+            {
+                MessageBox.Show("Pilih data yang akan di-update.");
+                return;
+            }
 
+            dgvData.CurrentRow.Cells[0].Value = txtNoMobil.Text;
+            dgvData.CurrentRow.Cells[1].Value = txtJenisMobil.Text;
+            dgvData.CurrentRow.Cells[2].Value = txtMerkMobil.Text;
+            dgvData.CurrentRow.Cells[3].Value = txtHargaSewa.Text;
         }
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
+            if (dgvData.CurrentRow == null)
+            {
+                MessageBox.Show("Pilih data yang akan dihapus.");
+                return;
+            }
 
+            if (MessageBox.Show("Hapus data ini?", "Konfirmasi",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                dgvData.Rows.RemoveAt(dgvData.CurrentRow.Index);
+            }
         }
 
         private void btnClear_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtJenis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtJenis_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

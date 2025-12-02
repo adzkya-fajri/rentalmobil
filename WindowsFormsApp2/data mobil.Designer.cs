@@ -9,12 +9,7 @@ namespace RentalMobil
 
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Label lblTitle;
-
-        // Input Fields
-        private System.Windows.Forms.Label lblNoMobil;
         private System.Windows.Forms.TextBox txtNoMobil;
-        private System.Windows.Forms.Label lblJenisMobil;
-        private System.Windows.Forms.Label lblHargaSewa;
         private System.Windows.Forms.TextBox txtHargaSewa;
         private System.Windows.Forms.TextBox txtJenisMobil;
         private System.Windows.Forms.TextBox txtMerkMobil;
@@ -48,18 +43,15 @@ namespace RentalMobil
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.lblNoMobil = new System.Windows.Forms.Label();
             this.txtNoMobil = new System.Windows.Forms.TextBox();
-            this.lblJenisMobil = new System.Windows.Forms.Label();
-            this.lblHargaSewa = new System.Windows.Forms.Label();
             this.txtHargaSewa = new System.Windows.Forms.TextBox();
             this.rbNoMobil = new System.Windows.Forms.RadioButton();
             this.rbJenisMobil = new System.Windows.Forms.RadioButton();
@@ -76,6 +68,9 @@ namespace RentalMobil
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblJenisMobil = new System.Windows.Forms.Label();
+            this.pindahData = new System.Windows.Forms.Button();
+            this.pindahTransaksi = new System.Windows.Forms.Button();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
@@ -83,15 +78,15 @@ namespace RentalMobil
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
+            this.panelTop.Controls.Add(this.pindahTransaksi);
+            this.panelTop.Controls.Add(this.pindahData);
             this.panelTop.Controls.Add(this.label4);
             this.panelTop.Controls.Add(this.label3);
             this.panelTop.Controls.Add(this.label2);
             this.panelTop.Controls.Add(this.label1);
             this.panelTop.Controls.Add(this.lblTitle);
-            this.panelTop.Controls.Add(this.lblNoMobil);
             this.panelTop.Controls.Add(this.txtNoMobil);
             this.panelTop.Controls.Add(this.lblJenisMobil);
-            this.panelTop.Controls.Add(this.lblHargaSewa);
             this.panelTop.Controls.Add(this.txtHargaSewa);
             this.panelTop.Controls.Add(this.rbNoMobil);
             this.panelTop.Controls.Add(this.rbJenisMobil);
@@ -167,15 +162,6 @@ namespace RentalMobil
             this.lblTitle.Text = "Input Data Mobil";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblNoMobil
-            // 
-            this.lblNoMobil.BackColor = System.Drawing.Color.White;
-            this.lblNoMobil.Location = new System.Drawing.Point(133, 185);
-            this.lblNoMobil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNoMobil.Name = "lblNoMobil";
-            this.lblNoMobil.Size = new System.Drawing.Size(195, 28);
-            this.lblNoMobil.TabIndex = 1;
-            // 
             // txtNoMobil
             // 
             this.txtNoMobil.Location = new System.Drawing.Point(133, 101);
@@ -183,24 +169,6 @@ namespace RentalMobil
             this.txtNoMobil.Name = "txtNoMobil";
             this.txtNoMobil.Size = new System.Drawing.Size(132, 22);
             this.txtNoMobil.TabIndex = 2;
-            // 
-            // lblJenisMobil
-            // 
-            this.lblJenisMobil.BackColor = System.Drawing.Color.White;
-            this.lblJenisMobil.Location = new System.Drawing.Point(101, 330);
-            this.lblJenisMobil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblJenisMobil.Name = "lblJenisMobil";
-            this.lblJenisMobil.Size = new System.Drawing.Size(227, 28);
-            this.lblJenisMobil.TabIndex = 3;
-            // 
-            // lblHargaSewa
-            // 
-            this.lblHargaSewa.BackColor = System.Drawing.Color.White;
-            this.lblHargaSewa.Location = new System.Drawing.Point(133, 140);
-            this.lblHargaSewa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHargaSewa.Name = "lblHargaSewa";
-            this.lblHargaSewa.Size = new System.Drawing.Size(195, 28);
-            this.lblHargaSewa.TabIndex = 7;
             // 
             // txtHargaSewa
             // 
@@ -315,14 +283,14 @@ namespace RentalMobil
             this.dgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.dgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvData.ColumnHeadersHeight = 29;
             this.dgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -330,14 +298,14 @@ namespace RentalMobil
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvData.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvData.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvData.EnableHeadersVisualStyles = false;
             this.dgvData.Location = new System.Drawing.Point(33, 386);
             this.dgvData.Margin = new System.Windows.Forms.Padding(4);
@@ -376,6 +344,38 @@ namespace RentalMobil
             this.dataGridViewTextBoxColumn5.HeaderText = "Kategori";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // lblJenisMobil
+            // 
+            this.lblJenisMobil.BackColor = System.Drawing.Color.White;
+            this.lblJenisMobil.Location = new System.Drawing.Point(101, 330);
+            this.lblJenisMobil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblJenisMobil.Name = "lblJenisMobil";
+            this.lblJenisMobil.Size = new System.Drawing.Size(227, 28);
+            this.lblJenisMobil.TabIndex = 3;
+            // 
+            // pindahData
+            // 
+            this.pindahData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pindahData.Location = new System.Drawing.Point(418, 14);
+            this.pindahData.Margin = new System.Windows.Forms.Padding(4);
+            this.pindahData.Name = "pindahData";
+            this.pindahData.Size = new System.Drawing.Size(161, 28);
+            this.pindahData.TabIndex = 20;
+            this.pindahData.Text = "pindahData";
+            this.pindahData.UseVisualStyleBackColor = false;
+            this.pindahData.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pindahTransaksi
+            // 
+            this.pindahTransaksi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pindahTransaksi.Location = new System.Drawing.Point(615, 14);
+            this.pindahTransaksi.Margin = new System.Windows.Forms.Padding(4);
+            this.pindahTransaksi.Name = "pindahTransaksi";
+            this.pindahTransaksi.Size = new System.Drawing.Size(161, 28);
+            this.pindahTransaksi.TabIndex = 21;
+            this.pindahTransaksi.Text = "pindahTransaksi";
+            this.pindahTransaksi.UseVisualStyleBackColor = false;
             // 
             // FormDataMobil
             // 
@@ -445,5 +445,8 @@ namespace RentalMobil
         private Label label4;
         private Label label3;
         private Label label2;
+        private Label lblJenisMobil;
+        private Button pindahData;
+        private Button pindahTransaksi;
     }
 }
