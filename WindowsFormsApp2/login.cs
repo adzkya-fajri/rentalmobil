@@ -126,9 +126,9 @@ namespace RentalMobil
 
                 // Buka form utama
                 this.Hide();
-                // FormMain formMain = new FormMain();
-                // formMain.ShowDialog();
-                // this.Close();
+                FormDataMobil formDataMobil = new FormDataMobil();
+                formDataMobil.ShowDialog();
+                this.Close();
             }
             else
             {
