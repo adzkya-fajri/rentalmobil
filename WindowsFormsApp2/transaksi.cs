@@ -29,6 +29,7 @@ namespace RentalMobil
                 int x2 = rand.Next(0, this.Width);
                 int y2 = rand.Next(0, 140);
                 g.DrawLine(pen, x1, y1, x2, y2);
+                global
             }
         }
 
